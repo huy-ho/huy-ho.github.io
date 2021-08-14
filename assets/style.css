@@ -12,7 +12,7 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 30px 150px;
 }
 
 .logo {
@@ -23,6 +23,11 @@ header {
     letter-spacing: 3px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.logo a {
+    color: purple;
+}
+
 
 .nav__links {
     list-style: none;
@@ -111,15 +116,11 @@ body {
 
 /*About */
 
-.about-section h1 {
-    padding: 30px 10%;
-    font-weight: 300;
-    text-decoration: underline;
-}
 
 .pic-about {
     float: right;
     margin-right: 150px;
+    padding-top: 50px;
 } 
 
 #myself {
@@ -127,7 +128,7 @@ body {
 }
 
 .about-text {
-    padding: 30px 10%;
+    padding: 50px 150px;
     width: 1000px;
 }
 
@@ -136,7 +137,13 @@ body {
     font-size: 23px;
     letter-spacing: 3px;
     padding-bottom: 20px;
-    font-weight: normal;
+    font-weight: 350;
+    
+}
+
+.about-text .bold {
+    font-weight: 350;
+
 }
 
 /*PROJECTS PAGE */
