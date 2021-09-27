@@ -147,57 +147,82 @@ body {
 }
 
 /*PROJECTS PAGE */
+#menu{
 
-.hvrbox,
-.hvrbox * {
-	box-sizing: border-box;
+    height: 100px;
+    width: 100px;
 }
-.hvrbox {
+
+
+.row {
+	width: 100%;
+	height: 320px;
+	text-align: center;
+}
+
+.item {
 	position: relative;
 	display: inline-block;
-	overflow: hidden;
-	max-width: 50%;
-	height: auto;
-    margin: 20px 100px;
+	opacity: 0.8;
+    overflow: hidden;
+    margin-right: 3%;
+    margin-left: 3%;
+    height: 220px;
+    width: 220px;
+    margin-top: 5%;
 }
-.hvrbox img {
-	max-width: 50%;
-    margin: 20px 100px;
+
+.item:hover{
+    cursor: pointer;
 }
-.hvrbox .hvrbox-layer_bottom {
-	display: block;
-}
-.hvrbox .hvrbox-layer_top {
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	right: 0;
-	bottom: 0;
-	width: 50%;
+
+img {
 	height: 100%;
-    margin: 20px 100px;
-	background: rgba(0, 0, 0, 0.6);
-	color: #fff;
-	padding: 15px;
-	-moz-transition: all 0.4s ease-in-out 0s;
-	-webkit-transition: all 0.4s ease-in-out 0s;
-	-ms-transition: all 0.4s ease-in-out 0s;
-	transition: all 0.4s ease-in-out 0s;
-}
-.hvrbox:hover .hvrbox-layer_top,
-.hvrbox.active .hvrbox-layer_top {
-	opacity: 1;
-}
-.hvrbox .hvrbox-text {
-	text-align: center;
-	font-size: 18px;
-	display: inline-block;
 	position: absolute;
-	top: 50%;
 	left: 50%;
-	-moz-transform: translate(-50%, -50%);
-	-webkit-transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%);
-	transform: translate(-50%, -50%);
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
 }
+
+.center{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+}
+
+
+a, a:active, a:visited, a:focus {
+    text-decoration:none;
+    color: inherit;
+    }
+
+a:hover{
+    color: lightcoral;
+    cursor: pointer;
+}
+
+.button{
+    border: 1px #ffffff;
+    border-radius: 20px;
+    background-color: #f5c870;
+}
+
+
+.background{
+    background-color: white;
+    margin-top: 0.5%;
+    width: 100%;
+    height: 100%;
+}
+
+.center-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    color: black;
+
+}
+
