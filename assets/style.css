@@ -183,7 +183,7 @@ body {
     cursor: pointer;
 }
 
-img {
+.item img {
 	height: 100%;
 	position: absolute;
 	left: 50%;
