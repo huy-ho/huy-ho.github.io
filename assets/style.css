@@ -177,6 +177,7 @@ body {
     height: 220px;
     width: 220px;
     margin-top: 5%;
+    background-color: black;
 }
 
 .item:hover{
