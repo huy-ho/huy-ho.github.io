@@ -28,6 +28,10 @@ header {
     color: purple;
 }
 
+.logo a:hover {
+    color: lightcoral;
+}
+
 
 .nav__links {
     list-style: none;
@@ -206,7 +210,7 @@ a, a:active, a:visited, a:focus {
     }
 
 a:hover{
-    color: lightcoral;
+    color: gray;
     cursor: pointer;
 }
 
