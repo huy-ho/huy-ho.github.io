@@ -1,60 +1,138 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <title>About Me</title>
-        <link rel="stylesheet" href="assets/style.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta charset="utf-8">
 
-    </head>
+<head>
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+
+</head>
 
 
-    <body>
-        <!-- Navigation Section-->
-    
-        <header>
-            <h1 class="logo"> <a href="index.html">Huy Ho</a></h1>
-            <nav>
-                <ul class="nav__links">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="#">Experiences</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                </ul>
-            </nav>
-    
-        </header>
+<body>
+    <!-- Navigation Section-->
 
-        <div class="background">
-            <div class="menu"></div>
-                <div class="row">
-                    <div class="item"><img src="assets/img/forecast.png"/>
-                        <div class="center-text"><a href="https://github.com/huy-ho/stock-forecasting">Stock Market Forecasting</a></div>
-                    </div>
-                    <div class="item"><img src="assets/img/crime.jpg"/>
-                        <div class="center-text-white">Crime Analysis in DC/Chicago</div></div>
-                    <div class="item"><img src="assets/img/email.png"/>
-                        <div class="center-text">Spam/Ham Classifier</div></div>
+    <header>
+        <h1 class="logo"> <a href="index.html">Huy Ho</a></h1>
+        <nav>
+            <ul class="nav__links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </nav>
 
-			    </div>
-			    <div class="row">
-                    <div class="item"><img src="assets/img/ants.jpg"/>
-                        <div class="center-text">Ants</div></div>
-                    <div class="item"><img src="assets/img/sql.png"/>
-                        <div class="center-text">Lahman Baseball SQL</div></div>
-                    <div class="item"><img src="assets/img/webs.png"/>
-                        <div class="center-text"><a href="https://github.com/huy-ho/huy-ho.github.io">Personal Website</a></div></div>
+    </header>
 
-                    <div class="row">
-                    <div class="item"><img src="assets/img/spotify-logo.jpg"/>
-                        <div class="center-text-white">Spotify Automation</div></div>
-                    <div class="item"><img src="assets/img/d-bot.jpg"/>
-                        <div class="center-text">Discord Bot</div></div>
-                    </div>
-                    
-			    </div>
-			</div>
+    <div class="background">
+        <div class="menu"></div>
+
+        <div class="row">
+
+            <div class="image">
+                <img class="image__img" src="assets/img/ts-gif.gif" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Stock Forecasting & Analysis</div>
+                    <p class="image__description">
+                        Applied machine learning techniques to forecast and analyzed time-series stock data. Implemented models such as LSTM, ARIMA, and CNN to test different approaches.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img class="image__img" src="assets/img/d-bot.jpg" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Discord Bot</div>
+                    <p class="image__description">
+                        Using the Discord API, I created a bot for my own personal server. The bot is responsible for user greetings, logistics management, and have fun commands!
+                    </p>
+                </div>
+            </div>
+
+
+            <div class="image">
+                <img class="image__img" src="assets/img/email.png" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Spam or Ham Classifier</div>
+                    <p class="image__description">
+                        Created a model to predict whether an email is a spam or not. The following methods were used: feature selection, one-hot encoding, NLP, and logistic regression.
+                    </p>
+                </div>
+            </div>
+
         </div>
 
-    </body>
+        <div class="row">
+
+            <div class="image">
+                <img class="image__img" src="assets/img/sql1.png" alt="Bricks">
+                <div class="image__overlay image__overlay--blur">
+                    <div class="image__title">Lahman Baseball Database</div>
+                    <p class="image__description">
+                        Used SQL to extract information from a database. Investigated trends ranging from saber-metrics, salaries, and others.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img class="image__img" src="assets/img/chicago.jpg" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Crime Analysis in Chicago/DC</div>
+                    <p class="image__description">
+                        Analyzed crime data using Pandas, GeoPandas, regression, and created data visualization. I also explored trends ranging from neighborhoods to socioeconomical status.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img class="image__img" src="assets/img/spot.jpg" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Spotify Playlist</div>
+                    <p class="image__description">
+                        Using the Spotify API, automatically create a new playlist weekly based on my listening trends.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+
+            <div class="image">
+                <img class="image__img" src="assets/img/ants.jpg" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Ants vs Bees</div>
+                    <p class="image__description">
+                        Created a spin-off version of Plants vs. Zombies in Python.
+                    </p>
+                </div>
+            </div>
+
+            <div class="image">
+                <img class="image__img" src="assets/img/webdev.jpg" alt="Bricks">
+                <div class="image__overlay">
+                    <div class="image__title">Website</div>
+                    <p class="image__description">
+                        Created my own portfolio website for fun!
+                    </p>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+</body>
+
 </html>
