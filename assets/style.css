@@ -25,11 +25,11 @@ header {
 }
 
 .logo a {
-    color: purple;
+    color: black;
 }
 
 .logo a:hover {
-    color: lightcoral;
+    color: gray;
 }
 
 .nav__links {
