@@ -12,7 +12,10 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 1em 9.375em;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
 }
 
 .logo {
@@ -117,38 +120,31 @@ body {
 
 
 /*About */
-.about-section {
-    display: flex;
-    width: 100%;
-}
 
 .about-section {
     width: 100%;
 }
 
-.pic-about {
+.pic-about-wrapper {
     float: right;
-    padding-top: 3.125em;
+    padding-top: 5vh;
     width: 30%;
+    padding-right: 10vw;
 }
 
-@media screen and (max-width: 500px) {
-    #myself {
-      height: 5em;
-    }
-  }
 #myself {
-    height: 28em;
+    float: right;
+    height: 60vh;
+}
+
+.about-text-wrapper {
+    width: 70%;
+    padding-left: 0.5vw;
 }
 
 .about-text {
-<<<<<<< Updated upstream
-    padding: 3em 9em;
-    width: 62.5em;
-=======
-    padding: 50px 150px;
     width: 100%;
->>>>>>> Stashed changes
+    padding: 3em 9em;
 }
 
 .about-text p {
