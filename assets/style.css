@@ -151,6 +151,16 @@ body {
 }
 
 @media only screen and (max-device-width: 480px) {
+    .pic-about-wrapper {
+        float: right;
+        padding-top: 5vh;
+        width: 40vw;
+        height: 35vh;
+        padding-right: 4.5vw;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
     #myself {
         display: inline-block;
         width: 100%;
@@ -176,6 +186,23 @@ body {
     padding-bottom: 0.1em;
     margin-bottom: 1em;
     font-weight: 100;
+}
+
+@media only screen and (max-device-width: 480px) {
+    .about-text-wrapper {
+        width: 65%;
+        padding-left: 0.5vw;
+        padding-right: 5vw;
+    }
+}
+
+@media only screen and (max-device-width: 480px) {
+    .about-text {
+        width: 100%;
+        padding-left: 4.5vw;
+        padding-right: 2.5vw;
+        padding-top: 5vh;
+    }
 }
 
 @media only screen and (max-device-width: 480px) {
