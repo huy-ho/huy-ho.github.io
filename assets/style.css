@@ -12,8 +12,8 @@ header {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding-right: 10vw;
-    padding-left: 10vw;
+    padding-right: 5vw;
+    padding-left: 5vw;
     padding-top: 2vh;
     padding-bottom: 2vh;
 }
@@ -150,14 +150,9 @@ body {
 .about-text p {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 1.25em;
-    letter-spacing: 0.19em;
-    padding-bottom: 0.08em;
-    font-weight: 300;
+    padding-bottom: 0.1em;
     margin-bottom: 1em;
-}
-
-.about-text .bold {
-    font-weight: 200
+    font-weight: 400;
 }
 
 
