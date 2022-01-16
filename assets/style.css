@@ -131,8 +131,14 @@ body {
 
 #myself {
     float: right;
-    height: 60vh;
-    width: 22vw;
+}
+
+@media only screen and (max-device-width: 480px) {
+    #myself {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+    }
 }
 
 .about-text-wrapper {
