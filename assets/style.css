@@ -141,13 +141,15 @@ body {
 .pic-about-wrapper {
     float: right;
     padding-top: 5vh;
-    width: 35vw;
-    height: 35vh;
-    padding-right: 5vw;
+    width: 25vw;
+    height: 65vh;
+    padding-right: 6vw;
 }
 
 #myself {
     float: right;
+    width: 25vw;
+    height: 65vh;
 }
 
 @media only screen and (max-device-width: 480px) {
