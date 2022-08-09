@@ -1,3 +1,3 @@
 # huy-ho.github.io
 
-Creating my website for fun :D 
+Creating my website for fun!
