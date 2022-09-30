@@ -144,6 +144,7 @@ body {
     width: 25vw;
     height: 65vh;
     padding-right: 6vw;
+    object-fit: cover;
 }
 
 #myself {
