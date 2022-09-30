@@ -1,3 +1,3 @@
 # huy-ho.github.io
-My First Website
-test
+
+Creating my website for fun!
