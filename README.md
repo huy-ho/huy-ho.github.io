@@ -1,3 +1,3 @@
 # huy-ho.github.io
 
-Creating my website for fun!
+Hello, my name is Huy and I created this website for fun!
