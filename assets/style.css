@@ -110,11 +110,14 @@ footer {
 
 /* Profile Picture Styling */
 .profile-pic {
-    width: 100%; /* Spans the width of the column */
-    max-height: 500px;
-    object-fit: cover; /* Crops nicely if the photo is too tall */
-    border-radius: 4px; /* Optional: very subtle roundness */
-    margin-bottom: 3rem;
+    width: 160px;
+    max-width: 100%;
+    height: 160px;
+    max-height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 2rem auto 2rem auto;
+    display: block;
     filter: grayscale(20%); /* Optional: adds to the "academic/minimal" vibe */
 }
 
