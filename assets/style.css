@@ -16,32 +16,61 @@ body {
     /* Layout: Max-width creates that readable "column" feel */
     max-width: 700px;
     margin: 0 auto;
-    padding: 5vh 1.5rem;
+    padding: 4vh 1.5rem 0 1.5rem; /* Consistent top padding */
 }
 
 /* --- Navigation & Header --- */
 header {
     display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 5rem;
-    padding-bottom: 1rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    padding-bottom: 1.2rem;
     border-bottom: 1px solid #eee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;      /* Ensure no extra margin */
+    padding: 0;     /* Ensure no extra padding */
+    gap: 0.5rem;    /* Add spacing between image and name */
+}
+
+.logo-pic {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 0.3rem;
+    border: 1px solid #eee;
+    background: #fafafa;
+    display: inline-block;
+    /* Add higher pixel density rendering for sharper image */
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    image-rendering: -webkit-optimize-contrast;
 }
 
 .logo a {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1rem; /* Make logo smaller and consistent */
     color: #000;
     text-decoration: none;
     letter-spacing: -0.02em;
+    padding: 0;     /* Remove extra padding */
+    margin: 0;      /* Remove extra margin */
+    display: inline-block;
+    line-height: 1.2; /* Consistent vertical alignment */
 }
 
 .nav__links {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav__links a {
@@ -49,6 +78,7 @@ header {
     font-size: 0.9rem;
     color: #666;
     text-decoration: none;
+    padding: 0.2rem 0;
 }
 
 .nav__links a:hover {
@@ -57,7 +87,12 @@ header {
 }
 
 /* --- Main Content Section --- */
-.content-box p {
+main {
+    margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
+}
+
+main p {
     margin-bottom: 1.8rem;
 }
 
@@ -70,8 +105,8 @@ header {
 
 /* --- Footer & Social --- */
 footer {
-    margin-top: 5rem;
-    padding-top: 2rem;
+    margin-top: 3rem;
+    padding-top: 1.5rem;
     border-top: 1px solid #eee;
 }
 
@@ -80,6 +115,8 @@ footer {
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    margin: 0;
+    padding: 0;
 }
 
 .social-links a {
@@ -89,6 +126,7 @@ footer {
     color: #000;
     text-decoration: underline;
     text-underline-offset: 3px;
+    padding: 0.2rem 0;
 }
 
 .social-links a:hover {
@@ -98,13 +136,25 @@ footer {
 /* --- Mobile Adjustments --- */
 @media (max-width: 480px) {
     body {
-        padding: 2rem 1rem;
+        padding: 2rem 1rem 0 1rem;
         font-size: 17px;
     }
     header {
         flex-direction: column;
         gap: 1rem;
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
+        padding-bottom: 1rem;
+    }
+    main {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+    footer {
+        margin-top: 2rem;
+        padding-top: 1rem;
+    }
+    .logo {
+        align-items: flex-start;
     }
 }
 
@@ -126,88 +176,4 @@ footer {
     font-family: var(--font-body);
     font-style: italic;
     color: #555;
-}
-
-/* --- Project Image Styling --- */
-.project-img {
-    width: 160px;
-    height: 100px;
-    object-fit: contain; /* Ensures images/gifs don't stretch */
-    display: block;
-    margin: 0.5rem auto 1rem auto; /* Center image horizontally, less vertical space */
-    border: 1px solid #eee;
-    border-radius: 4px;
-    background-color: #f9f9f9; /* Helps if an image has transparency */
-}
-
-/* Optional: Make images slightly more vivid on hover */
-.project-img:hover {
-    border-color: #ccc;
-    transition: border-color 0.3s ease;
-}
-
-/* Mobile: Make image a bit smaller */
-@media (max-width: 480px) {
-    .project-img {
-        width: 110px;
-        height: 70px;
-    }
-}
-
-/* --- Project List Typography & Layout --- */
-.project-list {
-    list-style: none;
-    margin-top: 2rem;
-}
-
-.project-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin-bottom: 3rem;
-}
-
-.project-img {
-    flex-shrink: 0;
-    width: 90px;
-    height: 90px;
-    object-fit: cover;
-    border: 1px solid #eee;
-    border-radius: 6px;
-    background-color: #f9f9f9;
-    margin: 0; /* Remove auto-centering */
-    box-shadow: none;
-}
-
-.project-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 0.5rem;
-    gap: 1rem;
-}
-
-.project-content {
-    flex: 1;
-}
-
-@media (max-width: 600px) {
-    .project-item {
-        flex-direction: column;
-        align-items: stretch;
-        gap: 0.5rem;
-    }
-    .project-img {
-        width: 100%;
-        height: 140px;
-        margin-bottom: 0.5rem;
-    }
-}
-
-/* Section Title for the top of pages */
-.section-title {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    font-size: 1.8rem;
-    margin-bottom: 2rem;
-    letter-spacing: -0.02em;
 }
