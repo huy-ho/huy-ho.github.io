@@ -1,167 +1,138 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-    <title>Projects</title>
+    <meta charset="UTF-8">
+    <title>Technical Projects</title>
     <link rel="stylesheet" href="assets/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-
 </head>
-
-
 <body>
-    <!-- Navigation Section-->
-
-    <header>
-        <h1 class="logo"> <a href="index.html">Huy Ho</a></h1>
-        <nav>
-            <ul class="nav__links">
-                <li><a href="about.html">About</a></li>
-                 <!--<li><a href="experiences.html">Experiences</a></li>> -->
-                <li><a href="projects.html">Projects</a></li>
-            </ul>
-        </nav>
-
-    </header>
-
-    <div class="background">
-        <div class="menu"></div>
-
-        <div class="row">
-
-            <div class="image">
-                <img class="image__img" src="assets/img/ts-gif.gif" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Stock Forecasting & Analysis</div>
-                    <p class="image__description">
-                        Applied machine learning techniques to forecast and analyzed time-series stock data. Implemented models such as LSTM, ARIMA, and CNN to test different approaches.
-                    </p>
-                </div>
-            </div>
-
-            <div class="image">
-                <img class="image__img" src="assets/img/d-bot.jpg" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Discord Bot</div>
-                    <p class="image__description">
-                        Using the Discord API, I created a bot for my own personal server. The bot is responsible for user greetings, logistics management, and have fun commands!
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="image">
-                <img class="image__img" src="assets/img/rbh.png" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Robinhood API</div>
-                    <p class="image__description">
-                        Using the Robinhood API, I managed my portofolio. The Python Script is able to look up, execute/sell orders. 
-                        I also extract my holdings to perform analysis on its performance.
-                    </p>
-                </div>
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <div class="image">
-                <img class="image__img" src="assets/img/sql1.png" alt="Bricks">
-                <div class="image__overlay image__overlay--blur">
-                    <div class="image__title">Lahman Baseball Database</div>
-                    <p class="image__description">
-                        Used SQL to extract information from a database. Investigated trends ranging from saber-metrics, salaries, and others.
-                    </p>
-                </div>
-            </div>
-
-            <div class="image">
-                <img class="image__img" src="assets/img/chicago.jpg" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Crime Analysis in Chicago/DC</div>
-                    <p class="image__description">
-                        Analyzed crime data using Pandas, GeoPandas, regression, and created data visualization. I also explored trends ranging from neighborhoods to socioeconomical status.
-                    </p>
-                </div>
-            </div>
-
-            <div class="image">
-                <img class="image__img" src="assets/img/spot.jpg" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Spotify Playlist</div>
-                    <p class="image__description">
-                        Using the Spotify API, automatically create a new playlist weekly based on my listening trends.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-
-        <div class="row">
-
-            <div class="image">
-                <img class="image__img" src="assets/img/ants.jpg" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Ants vs Bees</div>
-                    <p class="image__description">
-                        Created a spin-off version of Plants vs. Zombies in Python.
-                    </p>
-                </div>
-            </div>
-
-
-            <div class="image">
-                <img class="image__img" src="assets/img/school.jpg" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Downtown College Prep - Student Reclassification</div>
-                    <p class="image__description">
-                        Working with Downtown College Prep, we helped built a model and web application to automate
-                        reclassification of students into different cohorts. This replaced the previous techniques of manual calculation
-                        in Excel.
-                    </p>
-                </div>
-            </div>
-
-            <div class="image">
-                <img class="image__img" src="assets/img/email.png" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Spam or Ham Classifier</div>
-                    <p class="image__description">
-                        Created a model to predict whether an email is a spam or not. The following methods were used: feature selection, one-hot encoding, NLP, and logistic regression.
-                    </p>
-                </div>
-            </div>
-
-
-
-
-        </div>
-
-        <div class="row">
-
-            <div class="image">
-                <img class="image__img" src="assets/img/webdev.jpg" alt="Bricks">
-                <div class="image__overlay">
-                    <div class="image__title">Website</div>
-                    <p class="image__description">
-                        Created my own portfolio website for fun!
-                    </p>
-                </div>
-            </div>
-
-
-        </div>
-
+<header>
+    <div class="logo">
+        <a href="index.html">Huy Ho</a>
     </div>
+    <nav>
+        <ul class="nav__links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
+</header>
+<main>
+    <h2 class="section-title">Technical Projects</h2>
+    
+    <ul class="project-list">
+        
+        <li class="project-item">
+            <img class="project-img" src="assets/img/ts-gif.gif" alt="Stock Trends">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Stock Forecasting & Analysis</h3>
+                    <span class="project-tech">LSTM • ARIMA • CNN</span>
+                </div>
+                <p>Applied machine learning techniques to forecast and analyze time-series stock data. Implemented models such as LSTM, ARIMA, and CNN to test different approaches.</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/d-bot.jpg" alt="Discord Bot">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Discord Bot</h3>
+                    <span class="project-tech">Python • Discord API</span>
+                </div>
+                <p>Using the Discord API, I created a bot for my own personal server. The bot is responsible for user greetings, logistics management, and has fun commands!</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/rbh.png" alt="Robinhood Portfolio">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Robinhood API</h3>
+                    <span class="project-tech">Python • Financial API</span>
+                </div>
+                <p>Using the Robinhood API, I managed my portfolio. The Python Script is able to look up, execute/sell orders, and extract holdings for performance analysis.</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/sql1.png" alt="SQL Analysis">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Lahman Baseball Database</h3>
+                    <span class="project-tech">SQL • Data Extraction</span>
+                </div>
+                <p>Used SQL to extract information from a database. Investigated trends ranging from saber-metrics, salaries, and other player statistics.</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/chicago.jpg" alt="Crime Analysis">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Crime Analysis in Chicago/DC</h3>
+                    <span class="project-tech">Python • Pandas • GeoPandas</span>
+                </div>
+                <p>Analyzed crime data using Pandas, GeoPandas, regression, and created data visualization. Explored trends ranging from neighborhoods to socioeconomical status.</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/spot.jpg" alt="Spotify Playlist">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Spotify Playlist</h3>
+                    <span class="project-tech">Spotify API • Python</span>
+                </div>
+                <p>Using the Spotify API, automatically create a new playlist weekly based on my listening trends.</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/ants.jpg" alt="Ants vs Bees">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Ants vs Bees</h3>
+                    <span class="project-tech">Python • Game Development</span>
+                </div>
+                <p>Created a spin-off version of Plants vs. Zombies in Python.</p>
+            </div>
+        </li>
 
+        <li class="project-item">
+            <img class="project-img" src="assets/img/school.jpg" alt="Student Reclassification">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Downtown College Prep - Student Reclassification</h3>
+                    <span class="project-tech">Python • Web App</span>
+                </div>
+                <p>Worked with Downtown College Prep to build a model and web application to automate reclassification of students into different cohorts, replacing manual Excel calculations.</p>
+            </div>
+        </li>
+
+        <li class="project-item">
+            <img class="project-img" src="assets/img/email.png" alt="Spam Classifier">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Spam or Ham Classifier</h3>
+                    <span class="project-tech">Python • NLP • Logistic Regression</span>
+                </div>
+                <p>Created a model to predict whether an email is spam or not using feature selection, one-hot encoding, NLP, and logistic regression.</p>
+            </div>
+        </li>
+
+        <li class="project-item">
+            <img class="project-img" src="assets/img/webdev.jpg" alt="Portfolio Website">
+            <div class="project-content">
+                <div class="project-header">
+                    <h3 class="project-name">Website</h3>
+                    <span class="project-tech">HTML • CSS • Portfolio</span>
+                </div>
+                <p>Created my own portfolio website for fun!</p>
+            </div>
+        </li>
+
+    </ul>
+</main>
 </body>
-
 </html>
