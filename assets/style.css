@@ -91,25 +91,13 @@ header {
     text-decoration: underline;
 }
 
-/* --- Unified Layout Container --- */
+/* --- Main Content Section --- */
 main {
     width: 100%;
-    /* Ensure everything inside main is left-aligned and matches the body column */
-    display: block; 
+    max-width: 700px;
+    box-sizing: border-box;
     margin: 2.5rem 0;
-}
-
-/* Consolidate all section containers to ensure no horizontal padding mismatches */
-.main-content, .about-text, .beyond-tech {
-    width: 100%;
-}
-
-/* Fix the list alignment to match the paragraph edge */
-.beyond-tech ul {
-    margin: 1.5rem 0;
-    padding-left: 0; /* Remove padding */
-    list-style-position: outside; /* Change to outside for cleaner text edge */
-    margin-left: 1.2rem; /* Indent slightly for the bullet */
+    display: block;
 }
 
 .main-content, .about-text, .beyond-tech {
@@ -118,14 +106,13 @@ main {
     box-sizing: border-box;
 }
 
+/* Fix the list alignment to match the paragraph edge */
 .beyond-tech ul {
-    margin-left: 1.5rem;
-    padding-left: 1.2rem;
-    margin-right: 0;
-    padding-right: 0;
+    margin: 1.5rem 0 1.5rem 1.5rem; /* Only left margin for indent */
+    padding-left: 0;
     list-style-position: inside;
-    width: 100%;
-    max-width: 700px;
+    width: auto;
+    max-width: 100%;
     box-sizing: border-box;
 }
 
@@ -218,24 +205,4 @@ footer {
     font-family: var(--font-body);
     font-style: italic;
     color: #555;
-}
-
-main, .main-content, .about-text, .beyond-tech, .beyond-tech ul {
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.beyond-tech ul {
-    margin-left: 1.5rem;
-    padding-left: 1.2rem;
-    margin-right: 0;
-    padding-right: 0;
-    list-style-position: inside;
-    max-width: 100%;
-    box-sizing: border-box;
-}
-
-.beyond-tech li {
-    margin-bottom: 0.7rem;
-    word-break: break-word;
 }
