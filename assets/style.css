@@ -206,3 +206,37 @@ footer {
     font-style: italic;
     color: #555;
 }
+
+.yt-link {
+    color: #c4302b;
+    text-decoration: none;
+    font-weight: 500;
+}
+.yt-link:hover {
+    text-decoration: underline;
+}
+
+
+.subtitle {
+    font-size: 0.9rem;   /* smaller than normal text */
+    color: #555;         /* grayish color */
+    margin-top: 0.3rem;  /* small space below the heading */
+    font-style: italic;  /* optional: gives it a nice subtle look */
+}
+
+.writing-header-text h1 {
+    margin: 0; /* removes default spacing */
+}
+
+.writing-title-text {
+    font-size: 0.9rem;
+    color: #555;
+    margin-top: 0.2rem; /* small gap after the title */
+    font-style: italic;
+}
+
+.status-note {
+    font-size: 0.8rem;
+    color: #888;
+    margin-top: 0.5rem;
+}
