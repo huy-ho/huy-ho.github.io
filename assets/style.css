@@ -76,6 +76,8 @@ header {
     gap: 1.5rem;
     margin: 0;
     padding: 0;
+    justify-content: flex-end;
+    flex: 1 1 auto;
 }
 
 .nav__links a {
@@ -164,6 +166,10 @@ footer {
 
 /* --- Mobile Adjustments --- */
 @media (max-width: 480px) {
+        .nav__links {
+            justify-content: flex-end;
+            gap: 1.2rem;
+        }
     body {
         padding: 1.5rem 0.9rem 0 0.9rem;
         font-size: 16.5px;
@@ -185,12 +191,6 @@ footer {
     }
     .logo {
         align-items: flex-start;
-    }
-    /* Keep navigation links right-aligned on narrow screens */
-    .nav__links {
-        align-self: flex-end;
-        justify-content: flex-end;
-        gap: 1rem;
     }
     /* Reduce space for the status/notice under headings on small screens */
     .status-note {
