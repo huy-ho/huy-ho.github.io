@@ -186,6 +186,12 @@ footer {
     .logo {
         align-items: flex-start;
     }
+    /* Keep navigation links right-aligned on narrow screens */
+    .nav__links {
+        align-self: flex-end;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
     /* Reduce space for the status/notice under headings on small screens */
     .status-note {
         margin-top: 0.5rem;
