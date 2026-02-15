@@ -114,19 +114,37 @@ main {
     box-sizing: border-box;
 }
 
-/* Fix the list alignment to match the paragraph edge */
+/* Beyond Tech section styling */
+.beyond-tech h2 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+    text-decoration: underline;
+}
+
 .beyond-tech ul {
-    margin: 1.5rem 0 1.5rem 1.5rem; /* Only left margin for indent */
+    list-style-type: disc;
+    margin-left: 1.2rem;
     padding-left: 0;
-    list-style-position: inside;
-    width: auto;
-    max-width: 100%;
-    box-sizing: border-box;
 }
 
 .beyond-tech li {
-    margin-bottom: 0.7rem;
-    word-break: break-word;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+}
+
+.beyond-tech p {
+    margin-bottom: 1.2rem;
+}
+
+.beyond-tech strong {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 600;
+    color: #000;
 }
 
 main p {
